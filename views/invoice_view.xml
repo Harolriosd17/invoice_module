@@ -1,0 +1,21 @@
+<odoo>
+    <record id="view_account_move_form_inherit" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.customer</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+
+        <field name="arch" type="xml">
+            <!-- Inserta la nueva pestaña después de las pestañas existentes -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Datos del Cliente">
+                    <group>
+                        <field name="customer_name"/>
+                        <field name="customer_address"/>
+                        <field name="customer_email"/>
+                        <field name="customer_city"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
