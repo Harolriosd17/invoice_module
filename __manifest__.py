@@ -6,7 +6,7 @@
     'author': 'Tu Nombre',
     'depends': ['account'],  # Asegúrate de que dependa del módulo de contabilidad
     'data': [
-        'views/account_move_form_view.xml',  # Vista extendida de la factura
+        'views/invoice_view.xml',  # Vista extendida de la factura
     ],
     'installable': True,
     'application': False,
