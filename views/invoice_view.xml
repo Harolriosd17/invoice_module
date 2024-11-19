@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <!-- Inserta la nueva pestaña después de las pestañas existentes -->
             <xpath expr="//notebook" position="inside">
-                <page string="Datos del Cliente">
+                <page string="Panamá">
                     <group>
                         <field name="customer_name"/>
                         <field name="customer_address"/>

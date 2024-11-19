@@ -10,5 +10,5 @@
         'views/invoice_view.xml',  # Vista extendida de la factura
     ],
     'installable': True,
-    'application': False,
+    'application': False
 }
