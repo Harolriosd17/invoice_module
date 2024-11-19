@@ -1,10 +1,11 @@
+# models/account_move.py
 from odoo import models, fields
 
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-    # Campos adicionales para la pestaña de datos del cliente
-    customer_name = fields.Char(string="Nombre del Cliente")
-    customer_address = fields.Char(string="Dirección del Cliente")
-    customer_email = fields.Char(string="Correo del Cliente")
-    customer_city = fields.Char(string="Ciudad del Cliente")
+    # Campos nuevos para la pestaña Panamá
+    panama_nombre_cliente = fields.Char(string="Nombre Cliente")
+    panama_direccion = fields.Char(string="Dirección")
+    panama_telefono = fields.Char(string="Teléfono")
+    panama_ciudad = fields.Char(string="Ciudad")
